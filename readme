@@ -1,4 +1,4 @@
-gituser ="mayureshtalentica"
+gituser="mayureshtalentica"
 fluxctl install `
 --git-user=${gituser} `
 --git-email=${gituser}@users.noreply.github.com `
@@ -19,11 +19,20 @@ fluxctl_linux_amd64 install `
 
 kubectl create ns flux
 
+kubectl config set-context --current --namespace=flux
+
+fluxctl install --git-user=${gituser} --git-email=${gituser}@users.noreply.github.com --git-url=git@github.com:${gituser}/fluxk8s --git-path=deployments --git-branch=master --namespace=flux  | kubectl apply -f -
+
+fluxctl --k8s-fwd-ns=flux  identity
+
+
 fluxctl --k8s-fwd-ns=flux list-workloads
+fluxctl --k8s-fwd-ns=flux  identity
 
 
 
 
-fluxctl --k8s-fwd-ns=flux policy -w default:deployment/nginx --tag "nginx=1.0.*""
+fluxctl --k8s-fwd-ns=flux policy -w default:deployment/nginx --tag "nginx=1.0.*"
 
 fluxctl --k8s-fwd-ns=flux sync
+
