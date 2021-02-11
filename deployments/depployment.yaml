@@ -10,6 +10,8 @@ metadata:
     fluxcd.io/tag.nginx: semver:~1
     fluxcd.io/automated: 'true'
 
+  annotations:
+    fluxcd.io/tag.nginx: glob:1*
 spec:
   selector:
     matchLabels:
