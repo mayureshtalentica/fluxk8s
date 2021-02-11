@@ -7,7 +7,9 @@ metadata:
     app: nginx
     test: test
   annotations:
+
     fluxcd.io/tag.nginx: semver:~1.0
+
     fluxcd.io/automated: 'true'
 
 spec:
@@ -27,7 +29,9 @@ spec:
     spec:
       containers:
       - name: nginx
+
         image: mayureshpatil/dockernginx:1.0.1
+
         imagePullPolicy: Always
         ports:
         - containerPort: 80
