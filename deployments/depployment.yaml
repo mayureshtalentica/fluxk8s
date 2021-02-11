@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: mayureshpatil/dockernginx:2
+        image: mayureshpatil/dockernginx:1
         imagePullPolicy: Always
         ports:
         - containerPort: 80
