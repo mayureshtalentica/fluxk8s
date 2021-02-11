@@ -57,4 +57,4 @@ spec:
       #     secretName: mysecret
       # - name: config-volume
       #   configMap:
-      #     name: example-config #name of our configmap object
+      #     adname: example-config #name of our configmap object
