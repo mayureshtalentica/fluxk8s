@@ -22,8 +22,8 @@ kubectl create ns flux
 fluxctl --k8s-fwd-ns=flux list-workloads
 
 
-fluxctl --k8s-fwd-ns=flux identity
 
-fluxctl_linux_amd64 install --git-user=${gituser} --git-email=${gituser}@users.noreply.github.com --git-url=git@github.com:${gituser}/fluxk8s --git-path=deployments --git-branch=master --namespace=flux  | kubectl apply -f -
+
+
 
 fluxctl --k8s-fwd-ns=flux sync
