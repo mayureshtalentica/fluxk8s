@@ -1,0 +1,1 @@
+{"jobID":"837142b5-243d-0642-e4f9-fcaf402694ef","spec":{"type":"policy","cause":{"Message":"","User":"Mayuresh Patil \u003cmayuresh.patil@talentica.com\u003e"},"spec":{"default:deployment/nginx":{"add":{"tag.nginx":"glob:1.0.*"},"remove":{}}}},"result":null}
