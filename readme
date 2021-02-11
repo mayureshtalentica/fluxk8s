@@ -24,6 +24,6 @@ fluxctl --k8s-fwd-ns=flux list-workloads
 
 
 
-
+fluxctl --k8s-fwd-ns=flux policy -w default:deployment/nginx --tag "nginx=1*"
 
 fluxctl --k8s-fwd-ns=flux sync
