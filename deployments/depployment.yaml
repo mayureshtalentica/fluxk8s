@@ -7,6 +7,8 @@ metadata:
     app: nginx
     test: test
 
+  annotations:
+    fluxcd.io/tag.nginx: glob:1*
 spec:
   selector:
     matchLabels:
