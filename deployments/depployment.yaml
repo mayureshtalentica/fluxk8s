@@ -30,7 +30,7 @@ spec:
       containers:
       - name: nginx
 
-        image: mayureshpatil/dockernginx:1.0.1
+        image: mayureshpatil/dockernginx:1.0.5
 
         imagePullPolicy: Always
         ports:
