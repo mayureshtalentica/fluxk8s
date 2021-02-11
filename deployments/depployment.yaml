@@ -6,9 +6,7 @@ metadata:
   labels:
     app: nginx
     test: test
-  annotations:
-    fluxcd.io/tag.nginx: semver:~1.0
-    fluxcd.io/automated: 'true'
+
 spec:
   selector:
     matchLabels:
